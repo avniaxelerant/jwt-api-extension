@@ -11,7 +11,6 @@ use PHPUnit_Framework_Assert as Assertions;
 
 class JwtApiContext extends MinkContext implements ApiClientAwareInterface
 {
-
     /**
      * @var string
      */
