@@ -4,13 +4,13 @@ namespace Behat\JwtApiExtension\Context;
 
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
+use Behat\MinkExtension\Context\MinkContext;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\RequestException;
 use PHPUnit_Framework_Assert as Assertions;
 
-class JwtApiContext implements ApiClientAwareInterface
+class JwtApiContext extends MinkContext implements ApiClientAwareInterface
 {
-
     /**
      * @var string
      */
